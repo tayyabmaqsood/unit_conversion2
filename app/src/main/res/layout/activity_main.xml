@@ -17,39 +17,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <RadioButton
-        android:id="@+id/MassRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginBottom="21dp"
-        android:text="Mass Convertor"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/LengthRadioButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <RadioButton
-        android:id="@+id/LengthRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="17dp"
-        android:text="Length Convertor"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/DistanceRadioButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MassRadioButton" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/DistanceRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Distance Convertor"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LengthRadioButton" />
+            <RadioButton
+                android:id="@+id/MassRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginBottom="21dp"
+                android:onClick="checkButton"
+                android:text="Mass Convertor"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/LengthRadioButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <RadioButton
+                android:id="@+id/LengthRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="17dp"
+                android:onClick="checkButton"
+                android:text="Length Convertor"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/DistanceRadioButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MassRadioButton" />
+
+            <RadioButton
+                android:id="@+id/DistanceRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="checkButton"
+                android:text="Distance Convertor"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LengthRadioButton" />
+            />
+        </RadioGroup>
+</RelativeLayout>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
