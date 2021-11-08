@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".share">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello From Share Activity"
+      android:textSize="24sp"
+      tools:layout_editor_absoluteX="71dp"
+      tools:layout_editor_absoluteY="177dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
