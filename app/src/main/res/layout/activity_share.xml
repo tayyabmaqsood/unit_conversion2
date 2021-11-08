@@ -13,6 +13,28 @@
       android:layout_height="wrap_content"
       android:text="Hello From Share Activity"
       android:textSize="24sp"
-      tools:layout_editor_absoluteX="71dp"
-      tools:layout_editor_absoluteY="177dp" />
+      app:layout_constraintBottom_toTopOf="@+id/button4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Share"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toStartOf="@+id/button4"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="241dp" />
+
+  <Button
+      android:id="@+id/button4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Go Back"
+      android:textSize="24sp"
+      tools:layout_editor_absoluteX="222dp"
+      tools:layout_editor_absoluteY="241dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
