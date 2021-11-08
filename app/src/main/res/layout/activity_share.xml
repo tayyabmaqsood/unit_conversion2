@@ -30,8 +30,9 @@
           android:id="@+id/button3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Share"
           android:layout_margin="20dp"
+          android:onClick="shareOnSocialMedia"
+          android:text="Share"
           android:textSize="20sp" />
 
       <Button

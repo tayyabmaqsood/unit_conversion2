@@ -15,6 +15,7 @@ import android.widget.TextView;
 import javax.xml.transform.Result;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.unitConversion.MESSAGE";
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView inputText,resultText;
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         //Proceed to new activity
         //Create intent to start new activity
         Intent intent = new Intent(this, share.class);
+        String message = resultText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 
