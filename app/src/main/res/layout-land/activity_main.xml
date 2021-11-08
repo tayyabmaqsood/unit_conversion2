@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ResultView"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:textAlignment="center"
@@ -85,15 +85,32 @@
                     android:text="TextView"
                     android:textSize="22sp" />
 
-                <Button
-                    android:id="@+id/ResultButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30pt"
-                    android:layout_marginTop="5dp"
-                    android:onClick="calculate"
-                    android:text="Calculate"
-                    android:textSize="26sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ResultButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30pt"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="calculate"
+                        android:text="Calculate"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="113dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Share"
+                        android:textSize="26sp" />
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
