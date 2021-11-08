@@ -2,6 +2,8 @@ package com.example.unitconversion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -48,4 +50,13 @@ public class MainActivity extends AppCompatActivity {
         else
             resultText.setText("Please make sure you select convertor option");
     }
+
+    public void shareResult(View view) {
+        //Proceed to new activity
+        //Create intent to start new activity
+        Intent intent = new Intent(this, share.class);
+        startActivity(intent);
+    }
+
+
 }
